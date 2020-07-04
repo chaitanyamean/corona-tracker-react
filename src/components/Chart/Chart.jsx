@@ -12,7 +12,6 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
         const fetchApi = async () => {
             setDailyData(await fetchDailyData());
         } 
-        console.log(dailyData);
         fetchApi();
     },[]);
 
@@ -36,7 +35,6 @@ const Chart = ({data: {confirmed, recovered, deaths}, country}) => {
             />) : null
     );
 
-    console.log(country);
     const barChart = (
         confirmed
         ?(
